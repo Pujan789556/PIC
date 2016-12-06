@@ -19,11 +19,17 @@ class loginController extends BaseController
    		$checkLogin = DB::table('users')->where(['username'=>$username,'password'=>$password])->get();
    		if(count($checkLogin) > 0)
    		{
-   			return redirect('/home');
+            return redirect('/home');
+
    		}else
    		{
    			echo "Loing Failed";
    		}
    }
+
+   public function create()
+{
+    
+}
 }
 ?>

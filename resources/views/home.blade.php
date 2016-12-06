@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-       
 
-    </head>
-    <body>
+@extends('layout.default')
+@section('content')
        <center>
-            <button>Transaction Entry</button><br/>
+            <button type="button" onclick="window.location='{{ url("/transaction") }}'">Transaction Entry
+            </button><br/>
             <button>Attendance</button><br/>
             <button>Reports</button>
        </center>
-    </body>
-</html>
+@stop
